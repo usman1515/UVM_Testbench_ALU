@@ -1,10 +1,5 @@
 `timescale 1ns/100ps
 
-// typedef enum bit [3:0] {MODE0, MODE1, MODE2, MODE3,
-                        // MODE4, MODE5, MODE6, MODE7,
-                        // MODE8, MODE9, MODE10, MODE11,
-                        // MODE12, MODE13, MODE14, MODE15} e_alu_mode;
-
 typedef enum bit [3:0] {ADD, SUB, MUL, DIV,
                         LSL, RSL, ROTL, ROTR,
                         AND, OR, XOR, NAND,

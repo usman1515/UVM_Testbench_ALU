@@ -42,6 +42,8 @@ TEST_LIST	= alu_arithmetic_add_test alu_arithmetic_div_test
 
 # ------------------------------------------ TARGETS
 
+default: help
+
 compile:
 	@ echo " "
 	@ echo -------------------------- Compiling UVM Testbench -------------------------
@@ -94,3 +96,20 @@ clean:
 	${DIR_RESULTS_TB} \
 	DVEfiles \
 	*.fsdb *.vcd *.vpd *.log *.conf *.rc *.key
+
+help:
+	clear
+	@ echo " "
+	@ echo ---------------------- Targets defined in the MakeFile ---------------------
+	@ echo ----------------------------------------------------------------------------
+	@ echo " "
+	@ echo " compile:	compile ALU RTL and UVM via VCS "
+	@ echo " sim:		simulate ALU UVM Testbench for a particular test "
+	@ echo " runtest:	compile and simulate a single test"
+	@ echo " runall:	simulate and generate combined coverage for all tests"
+	@ echo " "
+	@ echo " clean:		clear all logs, bins, dumps etc "
+	@ echo " help:		Humble people ask for help :)"
+	@ echo " "
+	@ echo ----------------------------------------------------------------------------
+	@ echo " "

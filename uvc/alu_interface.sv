@@ -1,4 +1,3 @@
-
 interface alu_interface(input logic clk, reset_n);
 
     // ------------------------------------------ signals from the ALU IP
@@ -35,15 +34,8 @@ interface alu_interface(input logic clk, reset_n);
 
     // ------------------------------------------ driver modport
     modport driver_modport (input clk, reset_n, clocking driver_cb);
-    // modport driver_modport (
-    //     input out_data, out_cout,
-    //     output in_dataA, in_dataB, in_mode
-    // );
 
     // ------------------------------------------ monitor modport
     modport monitor_modport (input clk, reset_n, clocking monitor_cb);
-    // modport monitor_modport (
-    //     input in_dataA, in_dataB, in_mode, out_data, out_cout
-    // );
 
 endinterface : alu_interface
