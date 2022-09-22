@@ -1,0 +1,17 @@
+simv.daidir
+test.daidir
+simv
+test
+verdi_config_file
+csrc
+verdiLog
+DVEfiles
+
+*.fsdb
+*.vcd
+*.log
+*.conf
+*.rc
+*.key
+
+bin
